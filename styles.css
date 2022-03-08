@@ -1,0 +1,14 @@
+ p {
+ font-family: helvetica;
+ color: #FFFFFF;
+}
+div {
+ background-color: #1F1F1F;
+ padding: 20px;
+ box-shadow: 0 8px 16px 0 rgba(63,63,63,0.2), 0 6px 20px 0 rgba(63,63,63,0.19);
+ border-radius: 16px
+}
+ h1 {
+ font-family: georgia;
+ color: #FFFFFF;
+}
