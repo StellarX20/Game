@@ -12,3 +12,8 @@ div {
  font-family: georgia;
  color: #FFFFFF;
 }
+ button {
+ background-color: #1A7569;
+ display: inline-block;
+ border-radius: 8px;
+}
