@@ -2,7 +2,7 @@
  font-family: helvetica;
  color: #FFFFFF;
 }
-div {
+ div {
  background-color: #1F1F1F;
  padding: 20px;
  box-shadow: 0 8px 16px 0 rgba(63,63,63,0.2), 0 6px 20px 0 rgba(63,63,63,0.19);
@@ -26,39 +26,19 @@ div {
 }
  button:hover {
  background-color: #1E8A7C;
- display: inline-block;
- border-radius: 8px;
- border: none;
  box-shadow: 0 8px 16px 0 rgba(63,63,63,0.3), 0 6px 20px 0 rgba(63,63,63,0.29);
- font-family: helvetica;
- color: #FFFFFF;
  font-size: 17px;
- padding: 5px;
  cursor: pointer;
 }
  button:disabled {
  background-color: #197468;
- display: inline-block;
- border-radius: 8px;
- border: none;
- box-shadow: 0 8px 16px 0 rgba(63,63,63,0.2), 0 6px 20px 0 rgba(63,63,63,0.19);
- font-family: helvetica;
- color: #FFFFFF;
- font-size: 16px;
- padding: 5px;
  cursor: not-allowed;
  opacity: 0.6;
 }
  button:active {
  background-color: #00B39B;
- display: inline-block;
- border-radius: 8px;
- border: none;
  box-shadow: 0 8px 16px 0 rgba(63,63,63,0.3), 0 6px 20px 0 rgba(63,63,63,0.29);
- font-family: helvetica;
- color: #FFFFFF;
  font-size: 16px;
- padding: 5px;
  cursor: pointer;
 }
  .buttonalt {
@@ -75,38 +55,18 @@ div {
 }
  .buttonalt:hover {
  background-color: #545454;
- display: inline-block;
- border-radius: 8px;
- border: none;
  box-shadow: 0 8px 16px 0 rgba(63,63,63,0.3), 0 6px 20px 0 rgba(63,63,63,0.29);
- font-family: helvetica;
- color: #FFFFFF;
  font-size: 17px;
- padding: 5px;
  cursor: pointer;
 }
  .buttonalt:disabled {
  background-color: #474747;
- display: inline-block;
- border-radius: 8px;
- border: none;
- box-shadow: 0 8px 16px 0 rgba(63,63,63,0.2), 0 6px 20px 0 rgba(63,63,63,0.19);
- font-family: helvetica;
- color: #FFFFFF;
- font-size: 16px;
- padding: 5px;
  cursor: not-allowed;
  opacity: 0.6;
 }
  .buttonalt:active {
  background-color: #595959;
- display: inline-block;
- border-radius: 8px;
- border: none;
  box-shadow: 0 8px 16px 0 rgba(63,63,63,0.3), 0 6px 20px 0 rgba(63,63,63,0.29);
- font-family: helvetica;
- color: #FFFFFF;
- font-size: 16px;
- padding: 5px;
  cursor: pointer;
+ font-size: 16px;
 }
