@@ -16,4 +16,48 @@ div {
  background-color: #1A7569;
  display: inline-block;
  border-radius: 8px;
+ border: none;
+ box-shadow: 0 8px 16px 0 rgba(63,63,63,0.2), 0 6px 20px 0 rgba(63,63,63,0.19);
+ font-family: helvetica;
+ color: #FFFFFF;
+ font-size: 16px;
+ padding: 5px;
+ transition-duration: 0.4s;
+}
+ button:hover {
+ background-color: #1E8A7C;
+ display: inline-block;
+ border-radius: 8px;
+ border: none;
+ box-shadow: 0 8px 16px 0 rgba(63,63,63,0.3), 0 6px 20px 0 rgba(63,63,63,0.29);
+ font-family: helvetica;
+ color: #FFFFFF;
+ font-size: 17px;
+ padding: 5px;
+ cursor: pointer;
+}
+ button:disabled {
+ background-color: #197468;
+ display: inline-block;
+ border-radius: 8px;
+ border: none;
+ box-shadow: 0 8px 16px 0 rgba(63,63,63,0.2), 0 6px 20px 0 rgba(63,63,63,0.19);
+ font-family: helvetica;
+ color: #FFFFFF;
+ font-size: 16px;
+ padding: 5px;
+ cursor: not-allowed;
+ opacity: 0.6;
+}
+ button:active {
+ background-color: #00B39B;
+ display: inline-block;
+ border-radius: 8px;
+ border: none;
+ box-shadow: 0 8px 16px 0 rgba(63,63,63,0.3), 0 6px 20px 0 rgba(63,63,63,0.29);
+ font-family: helvetica;
+ color: #FFFFFF;
+ font-size: 16px;
+ padding: 5px;
+ cursor: pointer;
 }
