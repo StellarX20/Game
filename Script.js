@@ -57,7 +57,7 @@ let block6 = new block("Block #6", 16, "FF0", false)
 let block7 = new block("Block #7", 16, "0FF", false)
 let block8 = new block("Block #8", 64, "F00", true)
 class box {
-	defaultsize = "2x2"
+	static defaultsize = "2x2"
 	constructor(label, contained, shape, to, from) {
 		this.name = label
 		this.contents = contained;
@@ -73,7 +73,8 @@ class blockbox extends box {
 		this.blocks = blocks;
 	}
 }
-let blockbox1 = new blockbox("Blockbox #1", [block1, block2, block3, block4, block5, block6, block7, block8], box.dsize)
+let blockbox1 = new blockbox("Blockbox #1", [block1, block2, block3, block4, block5, block6, block7, block8], box.defaultsize)
 logString(blockbox1.name)
 logString(blockbox1.shape)
 logString(blockbox1.blocks[0].name)
+logString(box.defaultsize)
