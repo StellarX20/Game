@@ -70,3 +70,13 @@
  cursor: pointer;
  font-size: 16px;
 }
+ iframe {
+ border-color: #FFFFFF;
+ border: 2px solid;
+ border-radius: 1px;
+ }
+ dfn {
+ font-weight: bold;
+ font-style: italic;
+ color: rgb(147, 255, 255);
+ }
