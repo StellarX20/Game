@@ -1,5 +1,6 @@
 function logString(loggedString) {
 	console.log (loggedString);
+	return loggedString
 }
 randomNum = Math.random() * 10
 function logxGY(num1, num2, trueString, falseString, exactString) {
@@ -77,3 +78,4 @@ let blockbox1 = new blockbox("Blockbox #1", [block1, block2, block3, block4, blo
 logString(blockbox1.name)
 logString(blockbox1.shape)
 logString(blockbox1.blocks[3].name)
+logString(blockbox1.blocks[3].ss + blockbox1.blocks[6].ss - blockbox1.blocks[1].ss)
