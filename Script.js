@@ -39,8 +39,8 @@ function backgroundColor(color) {
 document.body.style.background = color;
 }
 class block {
-	size = 16
-	mss = 64
+	static size = 16
+	static mss = 64
 	constructor(name, ss, blockt, blockmd) {
 		this.name = name;
 		this.ss = ss;
@@ -68,13 +68,12 @@ class box {
 }
 class blockbox extends box {
 	constructor(name, blocks, shape) {
-		super(shape);
-		this.name = name;
+		super(name);
+		this.shape = shape
 		this.blocks = blocks;
 	}
 }
 let blockbox1 = new blockbox("Blockbox #1", [block1, block2, block3, block4, block5, block6, block7, block8], box.defaultsize)
 logString(blockbox1.name)
 logString(blockbox1.shape)
-logString(blockbox1.blocks[0].name)
-logString(box.defaultsize)
+logString(blockbox1.blocks[3].name)
