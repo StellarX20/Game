@@ -71,13 +71,11 @@
  font-size: 16px;
 }
  iframe {
- border-color: #FFFFFF;
- border: 2px solid;
- border-radius: 1px;
+ border: 1px solid white;
  }
  dfn {
  font-weight: bold;
  font-style: italic;
- color: rgb(147, 255, 255);
+ color: #93FFFF;
  }
  /* Edit This Note So You Can Fetch Origin I Guess */
