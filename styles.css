@@ -72,6 +72,7 @@
 }
  iframe {
  border: 1px solid white;
+ margin: 10px
  }
  dfn {
  font-weight: bold;
