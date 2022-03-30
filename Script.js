@@ -1,63 +1,61 @@
-function logString(loggedString) {
+// Function to console.log for lazy people
+function log(loggedString) {
 	console.log (loggedString);
 	return loggedString
 }
-randomNum = Math.random() * 10
+// Define stuff for later
+randomNum = Math.floor(Math.random() * 10)
+// Random number trinket
 function logxGY(num1, num2, trueString, falseString, exactString) {
 	if (num1 > num2) {
-		logString(trueString)
+		log(trueString)
 	}
 	if (num2 > num1) {
-		logString(falseString)
+		log(falseString)
 	}
 	if (num1 == num2) {
-		logString(exactString)
+		log(exactString)
 	}
 }
+// Use the trinket
 logxGY(randomNum, 5, ">5", "<5", "=5")
-function alertString(alertString) {
+// Why
+function alrt(alertString) {
 	alert(alertString);
 }
+// Alert version of random number trinket
 function alertxGY(num1, num2, trueString, falseString, exactString) {
 	if (num1 > num2) {
-		alertString(trueString)
+		alrt(trueString)
 	}
 	if (num2 > num1) {
-		alertString(falseString)
+		alrt(falseString)
 	}
 	if (num1 == num2) {
-		alertString(exactString)
+		alrt(exactString)
 	}
 }
-logString("Startup Message")
+log("Startup Message")
+// Making it easier to change things with button clicks
 function HTMLW(WrittenString, ParagraphID) {
 	let html = document.getElementById(ParagraphID).innerHTML = WrittenString; 
 }
 function HTMLB(ClassName, ButtonID) {
 	let html = document.getElementById(ButtonID).className = ClassName;
 }
+// Useless function definitions
 function backgroundColor(color) {
 document.body.style.background = color;
 }
+// Useless data storage (Now useful data storage)
 class block {
-	static size = 16
-	static mss = 64
-	constructor(name, ss, blockt, blockmd) {
+	constructor(name, color) {
 		this.name = name;
-		this.ss = ss;
-		this.blockt = blockt;
-		this.blockm = blockmd;
+		this.color = color
 	}
 }
-let block1 = new block("Block #1", 16, "FFF", true)
-let block2 = new block("Block #2", 32, "00F", false)
-let block3 = new block("Block #3", 64, "0F0", false)
-let block4 = new block("Block #4", 56, "F0F", true)
-let block5 = new block("Block #5", 64, "000", true)
-let block6 = new block("Block #6", 16, "FF0", false)
-let block7 = new block("Block #7", 16, "0FF", false)
-let block8 = new block("Block #8", 64, "F00", true)
-class box {
+// Example code: The adventure of pointlessness
+/* class box {
 	static defaultsize = "2x2"
 	constructor(label, contained, shape, to, from) {
 		this.name = label
@@ -74,8 +72,36 @@ class blockbox extends box {
 		this.blocks = blocks;
 	}
 }
+// Make use of my example code
 let blockbox1 = new blockbox("Blockbox #1", [block1, block2, block3, block4, block5, block6, block7, block8], box.defaultsize)
-logString(blockbox1.name)
-logString(blockbox1.shape)
-logString(blockbox1.blocks[3].name)
-logString(blockbox1.blocks[3].ss + blockbox1.blocks[6].ss - blockbox1.blocks[1].ss)
+log(blockbox1.name)
+log(blockbox1.shape)
+log(blockbox1.blocks[3].name)
+log(blockbox1.blocks[3].ss + blockbox1.blocks[6].ss - blockbox1.blocks[1].ss) */
+// The usual
+var c = document.getElementById("canvas");
+var ctx = c.getContext("2d");
+var ps = 5
+var pi = Math.PI
+var convdeg = 180/pi
+var defaultblock = new block("Default Block", "#ffffff")
+var sand = new block("Sand Grain", "#e6d3a5")
+// Easy pixel function
+function pixel(x, y, blc = defaultblock) {
+	ctx.fillStyle = blc.color;
+	ctx.fillRect(x * ps, (-y + 150) * ps, ps, ps)
+}
+pixel(1,50)
+pixel(2,100)
+pixel(3,150)
+pixel(0,0)
+pixel(0,150)
+pixel(300,150)
+pixel(150,75)
+pixel(50,50,sand)
+pixel(51,50,sand)
+pixel(52,50,sand)
+pixel(50,53,sand)
+pixel(52,53,sand)
+pixel(49,51,sand)
+pixel(53,51,sand)

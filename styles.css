@@ -79,4 +79,7 @@
  font-style: italic;
  color: #93FFFF;
  }
+ canvas {
+     border: 2px solid #808080
+ }
  /* Edit This Note So You Can Fetch Origin I Guess */
