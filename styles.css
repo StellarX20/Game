@@ -2,6 +2,9 @@
  font-family: helvetica;
  color: #FFFFFF;
 }
+ body {
+ background-color: #000;
+ }
  div {
  background-color: #1F1F1F;
  padding: 20px;
