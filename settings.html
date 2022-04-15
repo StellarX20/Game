@@ -4,9 +4,10 @@
         <script id="TheScript" src="Script.js" defer></script>
         <title> Settings </title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css" id="stylelink">
     </head>
     <body>
         <div> <button onclick="document.location = 'main.html'"> To Game </button> </div>
+        <button onclick="document.getelementbyID('stylelink').setAttribute(href, 'styles2.css')"> Set to light </button>
     </body>
 </html>
