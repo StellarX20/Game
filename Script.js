@@ -47,6 +47,16 @@ function HTMLB(ClassName, ButtonID) {
 function backgroundColor(color) {
 document.body.style.background = color;
 }
+function tetr(x,y) {
+	var z = x
+	var powz = "(z ** "
+	var mid = powz.repeat(y-1)
+	var rightbrack = ")"
+	var reprb = rightbrack.repeat(y-1)
+	var func = "z = " + mid + "z" + reprb
+	eval(func)
+	return z + "\n" + func
+}
 function repdigit(x,y) {
 	//return floor((10x/9)*(10^(floor(|y|))))
 	return Math.floor(((x/9)*(Math.pow(10,(Math.floor(Math.abs(y))))))-0.1)
