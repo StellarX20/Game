@@ -51,3 +51,4 @@ function repdigit(x,y) {
 	//return floor((10x/9)*(10^(floor(|y|))))
 	return Math.floor(((x/9)*(Math.pow(10,(Math.floor(Math.abs(y))))))-0.1)
 }
+sl = document.getElementById("stylelink")

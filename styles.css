@@ -1,19 +1,27 @@
- p {
+:root {
+    --td: 0.4s;
+}
+p {
  font-family: helvetica;
  color: #FFFFFF;
+ transition-duration: 0.4s;
 }
  body {
  background-color: #000;
+ transition-duration: 0.4s;
  }
  div {
  background-color: #1F1F1F;
  padding: 20px;
  box-shadow: 0 8px 16px 0 rgba(63,63,63,0.2), 0 6px 20px 0 rgba(63,63,63,0.19);
- border-radius: 16px
+ border-radius: 16px;
+ margin: 16px;
+ transition-duration: 0.4s;
 }
  h1 {
  font-family: georgia;
  color: #FFFFFF;
+ transition-duration: 0.4s;
 }
  button {
  background-color: #1A7569;
