@@ -49,16 +49,18 @@ document.body.style.background = color;
 }
 function tetr(x,y) {
 	var z = x
-	var powz = "(z ** "
-	var mid = powz.repeat(y-1)
-	var rightbrack = ")"
-	var reprb = rightbrack.repeat(y-1)
-	var func = "z = " + mid + "z" + reprb
+	var func = "z = " + "(z **".repeat(y-1) + "z" + ")".repeat(y-1)
 	eval(func)
-	return z + "\n" + func
+	return z
 }
-function repdigit(x,y) {
+function roundb(x,y) {
+	return (Math.round(x*(10**y)))/(10**y)
+}
+function repdigitold(x,y) {
 	//return floor((10x/9)*(10^(floor(|y|))))
 	return Math.floor(((x/9)*(Math.pow(10,(Math.floor(Math.abs(y))))))-0.1)
+}
+function repdigit(x,y) {
+	return Number(String(x).repeat(y))
 }
 sl = document.getElementById("stylelink")
