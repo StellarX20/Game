@@ -4,7 +4,7 @@ function log(loggedString) {
 	return loggedString
 }
 // Define stuff for later
-randomNum = Math.floor(Math.random() * 10)
+var randomNum = Math.floor(Math.random() * 10)
 // Random number trinket
 function logxGY(num1, num2, trueString, falseString, exactString) {
 	if (num1 > num2) {
@@ -47,6 +47,9 @@ function HTMLB(ClassName, ButtonID) {
 function backgroundColor(color) {
 document.body.style.background = color;
 }
+function linkbtn(link) {
+	document.location = String(link)
+}
 function tetr(x,y) {
 	var z = x
 	var func = "z = " + "(z **".repeat(y-1) + "z" + ")".repeat(y-1)
@@ -63,4 +66,33 @@ function repdigitold(x,y) {
 function repdigit(x,y) {
 	return Number(String(x).repeat(y))
 }
-sl = document.getElementById("stylelink")
+const sl = document.getElementById("stylelink")
+const cssvars = document.querySelector(':root');
+const cssvarscs = getComputedStyle(cssvars);
+var darkm = {bool: true};
+function changevar(vari, newv) {
+	var oldv = cssvarscs.getPropertyValue(vari);
+	cssvars.style.setProperty(vari, newv);
+	return "Succesfully changed " + String(vari) + " from " + String(oldv) + " to " + String(newv) + "!";
+}
+function setdark() {
+	changevar("--divb", "#1f1f1f")
+	changevar("--mbc", "#000")
+	changevar("--mfc", "#fff")
+	darkm.bool = true;
+}
+function setlight() {
+	changevar("--divb", "#eee")
+	changevar("--mbc", "#fff")
+	changevar("--mfc", "#000")
+	darkm.bool = false;
+}
+function switchstyle(isdark = darkm.bool) {
+	if (isdark == false) {
+		setdark()
+	}
+	else {
+		setlight()
+	}
+	return darkm.bool
+}

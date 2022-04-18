@@ -1,17 +1,24 @@
 :root {
     --td: 0.4s;
+    --divb: #1f1f1f;
+    --mbc: #000;
+    --mfc: #fff;
+}
+html {
+ color: var(--mfc);
+ background-color: var(--mbc);
 }
 p {
  font-family: helvetica;
- color: #FFFFFF;
+ color: var(--mfc);
  transition-duration: 0.4s;
 }
  body {
- background-color: #000;
+ background-color: var(--mbc);
  transition-duration: 0.4s;
  }
  div {
- background-color: #1F1F1F;
+ background-color: var(--divb);
  padding: 20px;
  box-shadow: 0 8px 16px 0 rgba(63,63,63,0.2), 0 6px 20px 0 rgba(63,63,63,0.19);
  border-radius: 16px;
@@ -20,7 +27,7 @@ p {
 }
  h1 {
  font-family: georgia;
- color: #FFFFFF;
+ color: var(--mfc);
  transition-duration: 0.4s;
 }
  button {
@@ -30,7 +37,7 @@ p {
  border: none;
  box-shadow: 0 8px 16px 0 rgba(63,63,63,0.2), 0 6px 20px 0 rgba(63,63,63,0.19);
  font-family: helvetica;
- color: #FFFFFF;
+ color: var(--mfc);
  font-size: 16px;
  padding: 5px;
  transition-duration: 0.4s;
@@ -59,7 +66,7 @@ p {
  border: none;
  box-shadow: 0 8px 16px 0 rgba(63,63,63,0.2), 0 6px 20px 0 rgba(63,63,63,0.19);
  font-family: helvetica;
- color: #FFFFFF;
+ color: var(--mfc);
  font-size: 16px;
  padding: 5px;
  transition-duration: 0.4s;
@@ -82,7 +89,7 @@ p {
  font-size: 16px;
 }
  iframe {
- border: 1px solid white;
+ border: 1px solid var(--mfc);
  margin: 10px
  }
  dfn {
@@ -97,4 +104,11 @@ p {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+ #Spinner1 {
+     animation: spin 1s linear infinite;
+     width: 120px;
+     height: 120px;
+     border-radius: 50%;
+     background-image: conic-gradient(red, orange, orange, yellow, yellow, green, green, blue, blue, indigo, indigo, violet, violet, red)
+ }
  /* Edit This Note So You Can Fetch Origin I Guess */
