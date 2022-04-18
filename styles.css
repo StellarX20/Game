@@ -111,4 +111,30 @@ p {
      border-radius: 50%;
      background-image: conic-gradient(red, orange, orange, yellow, yellow, green, green, blue, blue, indigo, indigo, violet, violet, red)
  }
+ .Spinner {
+     animation: spin 1s linear infinite;
+     border-radius: 50%;
+     background-color: --mfc;
+     color: --mbc;
+     border: 10px solid gray;
+ }
+ #Spinner2 {
+     border-top: 10px solid red;
+     width: 110px;
+     height: 110px;
+ }
+ #Spinner3 {
+     animation-duration: 0.00139s;
+     background-color: red;
+     border-top: 10px solid yellow;
+     width: 110px;
+     height: 110px;
+ }
+ #Spinner4 {
+     animation-direction: reverse;
+     background-color: green;
+     border-bottom: 10px solid blue;
+     width: 110px;
+     height: 110px;
+ }
  /* Edit This Note So You Can Fetch Origin I Guess */
