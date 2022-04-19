@@ -137,4 +137,21 @@ p {
      width: 110px;
      height: 110px;
  }
+ .SpinnerOnHover {
+    border-radius: 50%;
+    background-color: --mfc;
+    color: --mbc;
+    border: 10px solid gray;
+    height: 110px;
+    width: 110px;
+    animation: spin 1s linear infinite;
+    animation-play-state: paused;
+ }
+ .SpinnerOnHover:hover {
+     animation: spin 1s linear infinite;
+     animation-play-state: running;
+ }
+ #Spinner5 {
+     background-image: linear-gradient(red, green, blue);
+ }
  /* Edit This Note So You Can Fetch Origin I Guess */
