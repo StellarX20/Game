@@ -1,7 +1,28 @@
 // Function to console.log for lazy people
-function log(loggedString) {
-	console.log (loggedString);
-	return loggedString
+function log(logged = "Error", style = "Error") {
+	if (typeof(logged) == "string") {
+		if (logged.includes("%c")) {
+			if  (typeof(style) == "string") {
+				console.log(logged, style);
+				return logged
+			}
+			else {
+				throw TypeError("typeof(style) != \"String\". Please reconfigure log.")
+			}
+		}
+		else {
+			console.log(logged);
+			return logged
+		}
+	}
+	else {
+		if (typeof(style) == "string"){
+			throw TypeError("typeof(logged) != \"String\". Please reconfigure log.")
+		}
+		else {
+			throw TypeError("typeof(style), typeof(logged) != \"String\". Please reconfigure log.")
+		}
+	}
 }
 // Define stuff for later
 var randomNum = Math.floor(Math.random() * 10)
@@ -18,6 +39,7 @@ function logxGY(num1, num2, trueString, falseString, exactString) {
 	}
 }
 // Use the trinket
+log("%c Welcome to the console!", "font-size: 10em; font-family: helvetica; color: #abcdef; text-shadow: 0px 5px #9abcde;")
 logxGY(randomNum, 5, ">5", "<5", "=5")
 // Why
 function alrt(alertString) {
@@ -35,7 +57,6 @@ function alertxGY(num1, num2, trueString, falseString, exactString) {
 		alrt(exactString)
 	}
 }
-log("Startup Message")
 // Making it easier to change things with button clicks
 function HTMLW(WrittenString, ParagraphID) {
 	let html = document.getElementById(ParagraphID).innerHTML = WrittenString; 

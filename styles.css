@@ -114,8 +114,8 @@ p {
  .Spinner {
      animation: spin 1s linear infinite;
      border-radius: 50%;
-     background-color: --mfc;
-     color: --mbc;
+     background-color: var(--mfc);
+     color: var(--mbc);
      border: 10px solid gray;
  }
  #Spinner2 {
@@ -139,8 +139,8 @@ p {
  }
  .SpinnerOnHover {
     border-radius: 50%;
-    background-color: --mfc;
-    color: --mbc;
+    background-color: var(--mfc);
+    color: var(--mbc);
     border: 10px solid gray;
     height: 110px;
     width: 110px;
