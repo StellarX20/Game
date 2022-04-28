@@ -41,12 +41,17 @@ const sand = new block("Sand Grain", "#e6d3a5", "powder")
 const water = new block("Water Droplet", "#0040ff", "liquid")
 // Easy pixel function
 function pixel(x, y, blc = defaultblock) {
+	px = Math.floor(x) * ps
+	py = Math.floor(-y + 150) * ps
 	ctx.fillStyle = blc.color;
-	ctx.fillRect(x * ps, (-y + 150) * ps, ps, ps)
+	ctx.fillRect(px, py, ps, ps)
+	log(blc.color, blc.name, blc.material)
 }
-// c.addEventListener("click", test(water));
-function test(blc) {
-	pixel(c.offsetX, c.offsetY, blc)
+function test(event, blc = defaultblock) {
+	px = event.offsetX / ps
+	psy = event.offsetY / ps
+	py = -psy + 150
+	pixel(px, py, blc)
 }
 pixel(1,50)
 pixel(2,100)
