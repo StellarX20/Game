@@ -1,27 +1,14 @@
 // Function to console.log for lazy people
 function log(logged = "Error", style = "Error") {
-	if (typeof(logged) == "string") {
-		if (logged.includes("%c")) {
-			if  (typeof(style) == "string") {
-				console.log(logged, style);
-				return logged
-			}
-			else {
-				throw TypeError("typeof(style) != \"String\". Please reconfigure log.")
-			}
-		}
-		else {
-			console.log(logged);
-			return logged
-		}
-	}
-	else {
-		if (typeof(style) == "string"){
-			throw TypeError("typeof(logged) != \"String\". Please reconfigure log.")
-		}
-		else {
-			throw TypeError("typeof(style), typeof(logged) != \"String\". Please reconfigure log.")
-		}
+	if (typeof(logged) == "object") {
+		var keys = Object.keys(logged)
+				var logstr = ""
+				for (let i = 0; i < keys.length; i++) {
+					let keysi = keys[i]
+					logstr += (keysi + ": " + logged.keysi + ", ")
+				}
+		console.log(logstr);
+		return logged
 	}
 }
 // Define stuff for later

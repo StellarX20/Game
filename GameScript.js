@@ -1,4 +1,5 @@
 // Useless data storage (Now useful data storage)
+var pixels = new Array(301).fill(Array(151))
 class block {
 	constructor(name, color, material) {
 		this.name = name;
@@ -45,7 +46,8 @@ function pixel(x, y, blc = defaultblock) {
 	py = Math.floor(-y + 150) * ps
 	ctx.fillStyle = blc.color;
 	ctx.fillRect(px, py, ps, ps)
-	log(blc.color, blc.name, blc.material)
+	pixels[x][y] = blc
+	log(pixels[x][y])
 }
 function test(event, blc = defaultblock) {
 	px = event.offsetX / ps
