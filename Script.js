@@ -1,11 +1,11 @@
 // Function to console.log for lazy people
 function log(logged = "Error", style = "Error") {
 	if (typeof(logged) == "object") {
-		var keys = Object.keys(logged)
+		var obkeys = Object.keys(logged)
 				var logstr = ""
-				for (let i = 0; i < keys.length; i++) {
-					let keysi = keys[i]
-					logstr += (keysi + ": " + logged.keysi + ", ")
+				for (let i = 0; i < obkeys.length; i++) {
+					let obkeysi = obkeys[i]
+					logstr += (obkeysi + ": " + logged.obkeysi + ", ")
 				}
 		console.log(logstr);
 		return logged

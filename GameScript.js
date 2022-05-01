@@ -2,10 +2,11 @@
 var pixels = new Array(301).fill(Array(151))
 class block {
 	constructor(name, color, material) {
-		this.name = name;
+		this.name = name
 		this.color = color
 		this.mat = material
 	}
+	
 }
 // Example code: The adventure of pointlessness
 /* class box {
