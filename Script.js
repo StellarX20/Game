@@ -5,7 +5,7 @@ function log(logged = "Error", style = "Error") {
 				var logstr = ""
 				for (let i = 0; i < obkeys.length; i++) {
 					let obkeysi = obkeys[i]
-					logstr += (obkeysi + ": " + logged.obkeysi + ", ")
+					eval("logstr += (obkeysi + ': ' + logged." + obkeysi + " + ', ')")
 				}
 		console.log(logstr);
 		return logged
