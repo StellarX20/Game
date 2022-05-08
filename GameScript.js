@@ -48,7 +48,9 @@ function pixel(x, y, blc = defaultblock) {
 	ctx.fillStyle = blc.color;
 	ctx.fillRect(px, py, ps, ps)
 	pixels[x][y] = blc
-	log(pixels[x][y])
+	log(x)
+	log(y)
+	log(pixels[x-1][y-1])
 }
 function test(event, blc = defaultblock) {
 	px = event.offsetX / ps
