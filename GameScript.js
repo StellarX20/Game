@@ -52,7 +52,7 @@ function pixel(x, y, blc = defaultblock) {
 	log(y)
 	log(pixels[x-1][y-1])
 }
-function test(event, blc = defaultblock) {
+function place(event, blc = defaultblock) {
 	px = event.offsetX / ps
 	psy = event.offsetY / ps
 	py = -psy + 150
