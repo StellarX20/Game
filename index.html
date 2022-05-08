@@ -1,20 +1,17 @@
 <!doctype html>
 <html>
   <head>
-    <title> Main Page </title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css" id="stylelink">
     <script id="TheScript" src="Script.js" defer></script>
+    <script id="TheGameScript" src="GameScript.js" defer></script>
+	  <title id="PageTitle">Game Prototype</title>
+	  <link rel="stylesheet" href="styles.css" id="stylelink">
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Canvas, Welcome, Division, Game">
   </head>
-  <body>
-    <div> <h1> <span style="border-bottom: 3px solid white; padding: 10px;"> Main Page </span> </h1> </div>
-    <p> Hello, and welcome to the main page! There's no real use staying here, so you should probably go off to one of the shown things. Please note that this is <b> work in progress </b> and will probably be <b> far below your standards </b> if not <b> entirely repurposed. </b> </p>
-    <h2> My Stuff </h2>
-    <nav> <p> Unnamed Game </p> <br>
-       <button onclick="document.location='game.html'"> To Game </button> <br>
-       <p> Settings </p> <br>
-       <button onclick="document.location='settings.html'"> To Settings </button> <br>
-       <p> The Playground </p> <br>
-       <button onclick="linkbtn('playground.html')"> To Playground </button> </nav>
+  <body id="HTMLBody">
+   <div> <h1> Game </h1> <nav> <button onclick="document.location='index.html'"> To Main Page </button> <button onclick="document.location='settings.html'"> To Settings </button> <button onclick="linkbtn('playground.html')"> To Playground </button> </nav> </div>
+  <h1> Welcome! </h1>
+  <p> Below is a little game that I'm working on, but for now it will simply be a display. </p>
+  <canvas id="canvas" height="755" width="1505" onclick="test(event,water)"> Your browser doesn't support the &ltcanvas&gt tag! </canvas>
   </body>
 </html>
